@@ -1,8 +1,7 @@
 body {
-    margin: 0;
-    overflow: hidden;
+    margin: 0 auto;
 }
-.falling-objects {
+/* .falling-objects {
     display: flex;
     position: relative;
     justify-content: space-around;
@@ -38,7 +37,7 @@ body {
   .object:nth-child(4) { animation-delay: 0.4s; }
   .object:nth-child(5) { animation-delay: 0.5s; }
   .object:nth-child(6) { animation-delay: 0.6s; }
-  .object:nth-child(7) { animation-delay: 0.7s; }
+  .object:nth-child(7) { animation-delay: 0.7s; } */
 h1 {
     font-family: 'Arial', sans-serif;
     font-weight: bold;
@@ -81,6 +80,27 @@ h6 {
     position: relative;
     margin-top: -40px;
 }
+/* Базовые стили текста */
+.shaky-text-up {
+    display: inline-block;
+    cursor: pointer;
+    animation: shake-up 0.2s ease-in-out infinite;
+}
+/* Ключевые кадры анимации */
+@keyframes shake-up {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    75% {
+      transform: translateY(-10px);
+    }
+}
 .line3 {
     display: flex;
     flex-direction: row;
@@ -106,7 +126,6 @@ h6 {
 .shaky-text:hover {
     animation: shake 0.2s ease-in-out infinite;
 }
-
 /* Ключевые кадры анимации */
 @keyframes shake {
     0%, 100% {
@@ -141,7 +160,7 @@ h6 {
 }
 @keyframes row {
     0% {
-        right: -1000px;
+        right: -1200px;
     }
     100% {
         right: 100%;
@@ -162,11 +181,38 @@ h6 {
     position: relative;
     margin-top: -16px;
 }
+.shaky-text-auto {
+    display: inline-block;
+    cursor: pointer;
+    animation: shake-auto 0.2s ease-in-out infinite;
+}
+/* Ключевые кадры анимации */
+@keyframes shake-auto {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+}
 .line8 {
     display: flex;
     flex-direction: row;
     position: relative;
     margin-top: -40px;
+}
+.rotate-text {
+    transition: transform 0.3s ease;
+}
+  /* Анимация */
+  .rotate-text:hover {
+    transform: rotate(180deg);
 }
 .line9 {
     display: flex;
