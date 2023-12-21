@@ -1,43 +1,7 @@
 body {
     margin: 0 auto;
+    cursor: url('hand.webp'), auto;
 }
-/* .falling-objects {
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    align-items: flex-start;
-    z-index: 2;
-}
-.content {
-    z-index: 1;
-}
-.object {
-    animation: fall 2s linear infinite;
-    height: 10px;
-}
-@keyframes fall {
-    0% {
-      transform: translateY(-100vh);
-      opacity: 0;
-    }
-    10% {
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(100vh);
-      opacity: 1;
-    }
-}
-  .object:nth-child(1) { animation-delay: 0.1s; }
-  .object:nth-child(2) { animation-delay: 0.2s; }
-  .object:nth-child(3) { animation-delay: 0.3s; }
-  .object:nth-child(4) { animation-delay: 0.4s; }
-  .object:nth-child(5) { animation-delay: 0.5s; }
-  .object:nth-child(6) { animation-delay: 0.6s; }
-  .object:nth-child(7) { animation-delay: 0.7s; } */
 h1 {
     font-family: 'Arial', sans-serif;
     font-weight: bold;
@@ -142,28 +106,30 @@ h6 {
     }
 }
 .line5 {
-    width: 100%;
-    height: 200px;
-    display: block;
-    position: relative;
     overflow: hidden;
-    margin-top: -46px;
+    white-space: nowrap;
+    position: relative;
+    margin-top: -40px;
 }
-.row {
-    width: 1000px;
-    height: 200px;
+.running-text {
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    animation: marquee 6s linear infinite;
+}
+.running-text::before {
+    content: attr(data-content);
     position: absolute;
-    animation: row 8s linear infinite;
+    white-space: nowrap;
+    top: 0;
+    left: 100%;
 }
-.row:hover {
-    animation-play-state: paused;
-}
-@keyframes row {
+@keyframes marquee {
     0% {
-        right: -1200px;
+        transform: translateX(0);
     }
     100% {
-        right: 100%;
+        transform: translateX(-100%);
     }
 }
 .line6 {
@@ -247,6 +213,27 @@ h6 {
     position: relative;
     margin-top: -34px;
 }
+img {
+    width: 100%;
+    height: auto;
+}
+.pict_line1_left {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.pict_line1_right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.pict_line1 {
+    margin-top: -32px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .line14 {
     position: relative;
     margin-top: -46px;
@@ -300,6 +287,23 @@ h6 {
     position: relative;
     margin-top: -40px;
 }
+.pict_line2_left {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.pict_line2_right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.pict_line2 {
+    margin-top: -32px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .line22 {
     display: flex;
     flex-direction: row;
@@ -312,7 +316,7 @@ h6 {
     flex-direction: row;
     justify-content: end;
     position: relative;
-    margin-top: -40px;
+    margin-top: -20px;
 }
 .line24 {
     position: relative;
@@ -365,6 +369,85 @@ h6 {
     padding: 0 40px;
     position: relative;
     margin-top: -12px;
+}
+.pict_line3_left {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.pict_line3_right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.pict_line3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.line32 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -44px;
+}
+.line33 {
+    position: relative;
+    margin-top: -40px;
+}
+.line34 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: relative;
+    margin-top: -30px;
+}
+.line35 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: relative;
+    margin-top: -12px;
+}
+.line36 {
+    width: 100%;
+    height: 200px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-top: -46px;
+}
+.line37 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: relative;
+    margin-top: -40px;
+}
+.line38 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
+    margin-top: -16px;
+}
+.line39 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: -40px;
+}
+.line40 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: relative;
+    margin-top: 8px;
 }
 .footer {
     background-color: #000;
