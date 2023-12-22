@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    cursor: url('../images/finger.cur'), default;
+    cursor: url('https://i.imgur.com/s5dlYp6.png'), default;
 }
 h1 {
     font-family: 'Arial', sans-serif;
@@ -31,6 +31,11 @@ h5 {
 h6 {
     font-family: 'Times New Roman', serif;
     font-size: 40px;
+    color: #000;
+}
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
     color: #000;
 }
 .line1 {
@@ -240,20 +245,103 @@ img {
 .pict_line1_left img:hover {
     transform: scale(1.1);
 }
-.pict_line1_left img:hover {
+.pict_line1_right img {
+    transition: transform 0.3s ease-in-out;
+}
+.pict_line1_right img:hover {
     transform: scale(1.1);
 }
 .pict_line1_left .lol img:hover {
     content: url('../images/Lol_hover.png');
 }
+.buble_lol {
+    display: none;
+    background-image: url('../images/bable.svg');
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    margin-top: -44px;
+}
+.buble_lol p {
+    text-align: center;
+    width: 260px;
+    
+    margin: 42px 0 0 58px;
+}
+.pict_line1_left .lol:hover ~ .buble_lol {
+    display: block;
+}
 .pict_line1_left .mike img:hover {
-    content: url('../images/Mike_hover.png');
+    content: url('../images/mike_hover.png');
+}
+.buble_mike {
+    display: none;
+    background-image: url('../images/bable2.svg');
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: 333px;
+    margin-top: 133px;
+}
+.buble_mike p {
+    text-align: center;
+    width: 260px;
+    
+    margin: 42px 0 0 58px;
+}
+.pict_line1_left .mike:hover ~ .buble_mike {
+    display: block;
 }
 .pict_line1_left .bugurt img:hover {
-    content: url('../images/Bugurt_hover.png');
+    content: url('../images/bugurt_hover.png');
+}
+.buble_bugurt {
+    display: none;
+    background-image: url('../images/bable.svg');
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: 620px;
+    margin-top: -44px;
+}
+.buble_bugurt p {
+    text-align: center;
+    width: 252px;
+    
+    margin: 34px 0 0 58px;
+}
+.pict_line1_left .bugurt:hover ~ .buble_bugurt {
+    display: block;
 }
 .pict_line1_right .nichosi img:hover {
     content: url('../images/nichosi_hover.png');
+}
+.buble_nichosi  {
+    display: none;
+    background-image: url('../images/bable4.svg');
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: -280px;
+    margin-top: 130px;
+}
+.buble_nichosi  p {
+    text-align: center;
+    width: 252px;
+    
+    margin: 34px 0 0 58px;
+}
+.pict_line1_right .nichosi:hover ~ .buble_nichosi  {
+    display: block;
 }
 .line14 {
     position: relative;
@@ -324,6 +412,107 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.pict_line2_left img {
+    transition: transform 0.3s ease-in-out;
+}
+.pict_line2_left img:hover {
+    transform: scale(1.1);
+}
+.pict_line2_right img {
+    transition: transform 0.3s ease-in-out;
+}
+.pict_line2_right img:hover {
+    transform: scale(1.1);
+}
+.pict_line2_left .artem img:hover {
+    content: url('../images/artem_hover.png');
+}
+.buble_artem {
+    display: none;
+    background-image: url('../images/bable2.svg');
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: 168px;
+    margin-top: 148px;
+}
+.buble_artem p {
+    text-align: center;
+    width: 286px;
+    margin: 48px 0 0 44px;
+}
+.pict_line2_left .artem:hover ~ .buble_artem {
+    display: block;
+}
+.pict_line2_left .thisis img:hover {
+    content: url('../images/thisis_hover.png');
+}
+.buble_thisis {
+    display: none;
+    background-image: url('../images/bable.svg');
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: 500px;
+    margin-top: -40px;
+}
+.buble_thisis p {
+    text-align: center;
+    width: 260px;
+    
+    margin: 42px 0 0 58px;
+}
+.pict_line2_left .thisis:hover ~ .buble_thisis {
+    display: block;
+}
+.pict_line2_right .yzbagoisya img:hover {
+    content: url('../images/yzbagoisya_hover.png');
+}
+.buble_yzbagoisya {
+    display: none;
+    background-image: url('../images/bable4.svg');
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: -280px;
+    margin-top: 160px;
+}
+.buble_yzbagoisya p {
+    text-align: center;
+    width: 252px;
+    margin: 34px 0 0 58px;
+}
+.pict_line2_left .yzbagoisya:hover ~ .buble_yzbagoisya {
+    display: block;
+}
+.pict_line2_right .troll img:hover {
+    content: url('../images/troll_hover.png');
+}
+.buble_troll  {
+    display: none;
+    background-image: url('../images/bable3.svg');
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: -159px;
+    margin-top: -78px;
+}
+.buble_troll  p {
+    text-align: center;
+    width: 252px;
+    margin: 34px 0 0 58px;
+}
+.pict_line2_right .troll:hover ~ .buble_troll  {
+    display: block;
 }
 .line22 {
     display: flex;
