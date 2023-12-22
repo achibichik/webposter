@@ -252,7 +252,7 @@ img {
     transform: scale(1.1);
 }
 .pict_line1_left .lol img:hover {
-    content: url('../images/Lol_hover.png');
+    content: url('../images/lol_hover.png');
 }
 .buble_lol {
     display: none;
@@ -489,11 +489,13 @@ img {
     width: 252px;
     margin: 34px 0 0 58px;
 }
-.pict_line2_left .yzbagoisya:hover ~ .buble_yzbagoisya {
+.pict_line2_right .yzbagoisya:hover ~ .buble_yzbagoisya {
     display: block;
 }
 .pict_line2_right .troll img:hover {
     content: url('../images/troll_hover.png');
+    position: relative;
+    z-index: 2;
 }
 .buble_troll  {
     display: none;
