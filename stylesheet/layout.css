@@ -145,6 +145,20 @@ p {
     position: relative;
     margin-top: -40px;
 }
+@keyframes rotateanimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.line6 h5 {
+    animation: rotateanimation 2s ease-in-out infinite; /* вращение h1 */
+}
 .line7 {
     display: flex;
     flex-direction: row;
@@ -182,10 +196,11 @@ p {
     transition: transform 0.3s ease;
 }
   /* Анимация */
-  .rotate-text:hover {
+.rotate-text:hover {
     transform: rotate(180deg);
 }
 .line9 {
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -197,10 +212,21 @@ p {
     position: relative;
     margin-top: -20px;
 }
+.line10 h3 {
+    display: inline-block;
+    transform-origin: left;
+    animation: scaleXAnimation 2s linear infinite alternate;
+}
 .line11 {
     text-align: right;
     position: relative;
     margin-top: -50px;
+}
+.line11 h2 {
+    transition: transform 0.5s ease; /* Добавляем плавный переход для трансформации */
+}
+.line11:hover h2 {
+    transform: translateX(-100%); /* При наведении сдвигаем текст влево на 100% его ширины */
 }
 .line12 {
     display: flex;
@@ -221,6 +247,40 @@ p {
 img {
     width: 100%;
     height: auto;
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.line13 h1, .line13 h3 {
+    text-align: center;
+    margin: 0;
+}
+
+.line13 h1 {
+    animation: rotateAnimation 2s ease-in-out infinite; /* вращение h1 */
+}
+
+.line13 h3 {
+    animation: scaleAnimation 2s ease-in-out infinite; /* увеличение h3 в два раза */
+    transform-origin: center; /* точка трансформации в центре элемента */
 }
 .pict_line1_left {
     display: flex;
@@ -367,6 +427,19 @@ img {
     position: relative;
     margin-top: -46px;
 }
+.line17 h3 {
+    display: inline-block;
+    transform-origin: left;
+    animation: scaleXAnimation 2s linear infinite alternate;
+}
+@keyframes scaleXAnimation {
+    0%, 100% {
+      transform: scaleX(1); /* Начальное и конечное положение, без изменения размера */
+    }
+    50% {
+      transform: scaleX(2);
+    }
+}
 .line18 {
     display: flex;
     flex-direction: row;
@@ -380,6 +453,9 @@ img {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
+}
+.line19 h5 {
+    animation: rotateanimation 2s ease-in-out infinite; /* вращение h1 */
 }
 .line20 {
     display: flex;
@@ -396,6 +472,19 @@ img {
     align-items: center;
     position: relative;
     margin-top: -40px;
+}
+.line21 h1, .line21 h3 {
+    text-align: center;
+    margin: 0;
+}
+
+.line21 h1 {
+    animation: rotateAnimation 2s ease-in-out infinite; /* вращение h1 */
+}
+
+.line21 h3 {
+    animation: scaleAnimation 2s ease-in-out infinite; /* увеличение h3 в два раза */
+    transform-origin: center; /* точка трансформации в центре элемента */
 }
 .pict_line2_left {
     display: flex;
@@ -535,6 +624,14 @@ img {
     position: relative;
     margin-top: -50px;
 }
+.line24 h2::after {
+    content: "L"; /* Пустой контент */
+    opacity: 1; /* Начальная невидимость */
+}
+.line24:hover h2::after {
+    content: "ООООOL"; /* Добавляем текст при наведении */
+    opacity: 1; /* Делаем видимым */
+}
 .line25 {
     display: flex;
     flex-direction: row;
@@ -567,9 +664,12 @@ img {
     margin-top: -28px;
 }
 .line29 {
+    width: 100%;
     position: relative;
     margin-top: -40px;
+    
 }
+
 .line30 {
     text-align: right;
     position: relative;
@@ -745,6 +845,9 @@ img {
     position: relative;
     margin-top: -40px;
 }
+.line37 h5 {
+    animation: rotateanimation 2s ease-in-out infinite; /* вращение h1 */
+}
 .line38 {
     display: flex;
     flex-direction: row;
@@ -759,6 +862,7 @@ img {
     margin-top: -40px;
 }
 .line40 {
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
