@@ -322,13 +322,15 @@ img {
 }
 .pict_line1_right .nichosi img:hover {
     content: url('../images/nichosi_hover.png');
+    position: relative;
+    z-index: 2;
 }
 .buble_nichosi  {
     display: none;
     background-image: url('../images/bable4.svg');
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     background-repeat: no-repeat;
     margin-left: -280px;
@@ -336,8 +338,7 @@ img {
 }
 .buble_nichosi  p {
     text-align: center;
-    width: 252px;
-    
+    width: 244px;
     margin: 34px 0 0 58px;
 }
 .pict_line1_right .nichosi:hover ~ .buble_nichosi  {
@@ -596,6 +597,112 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.pict_line3_left img {
+    transition: transform 0.3s ease-in-out;
+}
+.pict_line3_left img:hover {
+    transform: scale(1.1);
+}
+.pict_line3_right img {
+    transition: transform 0.3s ease-in-out;
+}
+.pict_line3_right img:hover {
+    transform: scale(1.1);
+}
+.pict_line3_left .nyancat img:hover {
+    content: url('../images/nyancat_hover.png');
+    position: relative;
+    z-index: 1;
+}
+.buble_nyancat {
+    display: none;
+    background-image: url('../images/bable.svg');
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: 630px;
+    margin-top: -24px;
+}
+.buble_nyancat p {
+    text-align: center;
+    width: 286px;
+    margin: 48px 0 0 44px;
+}
+.pict_line3_left .nyancat:hover ~ .buble_nyancat {
+    display: block;
+}
+.pict_line3_right .zhdun img:hover {
+    content: url('../images/zhdun_hover.png');
+}
+.buble_zhdun {
+    display: none;
+    background-image: url('../images/bable4.svg');
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: -324px;
+    margin-top: 150px;
+}
+.buble_zhdun p {
+    text-align: center;
+    width: 260px;
+    margin: 42px 0 0 58px;
+}
+.pict_line3_right .zhdun:hover ~ .buble_zhdun {
+    display: block;
+}
+.pict_line3_right .pepe img:hover {
+    content: url('../images/pepe_hover.png');
+    position: relative;
+    z-index: 2;
+}
+.buble_pepe {
+    display: none;
+    background-image: url('../images/bable3.svg');
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: -164px;
+    margin-top: -50px;
+}
+.buble_pepe p {
+    text-align: center;
+    width: 252px;
+    margin: 34px 0 0 58px;
+}
+.pict_line3_right .pepe:hover ~ .buble_pepe {
+    display: block;
+}
+.pict_line3_right .smalldog img:hover {
+    content: url('../images/smalldog_hover.png');
+    position: relative;
+    z-index: 2;
+}
+.buble_smalldog  {
+    display: none;
+    background-image: url('../images/bable4.svg');
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: 150px;
+    margin-top: 169px;
+}
+.buble_smalldog  p {
+    text-align: center;
+    width: 235px;
+    margin: 44px 0 0 66px;
+}
+.pict_line3_right .smalldog:hover ~ .buble_smalldog  {
+    display: block;
 }
 .line32 {
     display: flex;
