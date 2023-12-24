@@ -259,7 +259,6 @@ img {
         transform: rotate(360deg);
     }
 }
-
 @keyframes scaleAnimation {
     0% {
         transform: scale(1);
@@ -271,16 +270,13 @@ img {
         transform: scale(1);
     }
 }
-
 .line13 h1, .line13 h3 {
     text-align: center;
     margin: 0;
 }
-
 .line13 h1 {
     animation: rotateAnimation 2s ease-in-out infinite; /* вращение h1 */
 }
-
 .line13 h3 {
     animation: scaleAnimation 2s ease-in-out infinite; /* увеличение h3 в два раза */
     transform-origin: center; /* точка трансформации в центре элемента */
@@ -525,13 +521,13 @@ img {
 .buble_artem {
     display: none;
     background-image: url('../images/bable2.svg');
-    width: 360px;
-    height: 160px;
+    width: 368px;
+    height: 168px;
     z-index: 1;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: 12vw;
-    margin-top: 170px;
+    margin-left: 200px;
+    margin-top: -100px;
     align-items: center;
     justify-content: center;
 }
@@ -548,13 +544,13 @@ img {
 .buble_thisis {
     display: none;
     background-image: url('../images/bable.svg');
-    width: 360px;
-    height: 160px;
+    width: 368px;
+    height: 168px;
     z-index: 1;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: 26vw;
-    margin-top: -2.8vw;
+    margin-left: 222px;
+    margin-top: -314px;
     align-items: center;
     justify-content: center;
 }
@@ -571,13 +567,13 @@ img {
 .buble_yzbagoisya {
     display: none;
     background-image: url('../images/bable4.svg');
-    width: 360px;
-    height: 160px;
+    width: 368px;
+    height: 168px;
     z-index: 1;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: -16vw;
-    margin-top: 9vw;
+    margin-left: -340px;
+    margin-top: -80px;
     align-items: center;
     justify-content: center;
 }
@@ -596,13 +592,13 @@ img {
 .buble_troll  {
     display: none;
     background-image: url('../images/bable3.svg');
-    width: 360px;
-    height: 160px;
-    z-index: 1;
+    width: 368px;
+    height: 168px;
+    z-index: 2;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: -4vw;
-    margin-top: -74px;
+    margin-left: -380px;
+    margin-top: -310px;
     align-items: center;
     justify-content: center;
 }
@@ -632,12 +628,12 @@ img {
     margin-top: -3vw;
 }
 .line24 h2::after {
-    content: "L"; /* Пустой контент */
-    opacity: 1; /* Начальная невидимость */
+    content: "L"; 
+    opacity: 1; 
 }
 .line24:hover h2::after {
-    content: "ООООOL"; /* Добавляем текст при наведении */
-    opacity: 1; /* Делаем видимым */
+    content: "ООООOL";
+    opacity: 1;
 }
 .line25 {
     display: flex;
@@ -725,13 +721,13 @@ img {
 .buble_nyancat {
     display: none;
     background-image: url('../images/bable.svg');
-    width: 360px;
-    height: 160px;
+    width: 368px;
+    height: 168px;
     z-index: 2;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: 34vw;
-    margin-top: -0.6vw;
+    margin-left: 620px;
+    margin-top: -300px;
     align-items: center;
     justify-content: center;
 }
@@ -748,13 +744,13 @@ img {
 .buble_zhdun {
     display: none;
     background-image: url('../images/bable4.svg');
-    width: 360px;
-    height: 160px;
-    z-index: 1;
+    width: 368px;
+    height: 168px;
+    z-index: 2;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: -16vw;
-    margin-top: 150px;
+    margin-left: -340px;
+    margin-top: -130px;
     align-items: center;
     justify-content: center;
 }
@@ -773,13 +769,13 @@ img {
 .buble_pepe {
     display: none;
     background-image: url('../images/bable3.svg');
-    width: 360px;
-    height: 160px;
-    z-index: 1;
+    width: 368px;
+    height: 168px;
+    z-index: 2;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: -5vw;
-    margin-top: -50px;
+    margin-left: -340px;
+    margin-top: -290px;
     align-items: center;
     justify-content: center;
 }
@@ -798,13 +794,13 @@ img {
 .buble_smalldog  {
     display: none;
     background-image: url('../images/bable4.svg');
-    width: 360px;
-    height: 160px;
+    width: 368px;
+    height: 168px;
     z-index: 2;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: 9.5vw;
-    margin-top: 169px;
+    margin-left: -340px;
+    margin-top: -100px;
     align-items: center;
     justify-content: center;
 }
