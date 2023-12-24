@@ -5,49 +5,52 @@ body {
 h1 {
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    font-size: 200px;
+    font-size: 10vw;
     color: #000;
 }
 h2 {
     font-family: 'Times New Roman', serif;
-    font-size: 200px;
+    font-size: 10vw;
     color: #000;
 }
 h3 {
     font-family: 'Arial', sans-serif;
-    font-size: 100px;
+    font-size: 4.7vw;
     color: #000;
 }
 h4 {
     font-family: 'Times New Roman', serif;
-    font-size: 100px;
+    font-size: 4.7vw;
     color: #000;
 }
 h5 {
     font-family: 'Arial', sans-serif;
-    font-size: 40px;
+    font-size: 2vw;
     color: #000;
 }
 h6 {
     font-family: 'Times New Roman', serif;
-    font-size: 40px;
+    font-size: 2vw;
     color: #000;
 }
 p {
     font-family: 'Arial', sans-serif;
-    font-size: 22px;
+    font-size: 1.5vw;
     color: #000;
+}
+.wraper {
+    position: relative;
 }
 .line1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    margin-top: -44px;
+    margin-top: -2vw;
 }
 .line2 {
     position: relative;
-    margin-top: -40px;
+    margin-top: -1.8vw;
 }
 /* Базовые стили текста */
 .shaky-text-up {
@@ -76,7 +79,7 @@ p {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: -30px;
+    margin-top: -2vw;
 }
 .line4 {
     display: flex;
@@ -84,7 +87,7 @@ p {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: -12px;
+    margin-top: -0.2vw;
 }
 /* Базовые стили текста */
 .shaky-text {
@@ -114,7 +117,7 @@ p {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    margin-top: -46px;
+    margin-top: -2vw;
 }
 .running-text {
     display: inline-block;
@@ -143,7 +146,7 @@ p {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: -40px;
+    margin-top: -1.8vw;
 }
 @keyframes rotateanimation {
     0% {
@@ -164,7 +167,7 @@ p {
     flex-direction: row;
     justify-content: end;
     position: relative;
-    margin-top: -16px;
+    margin-top: -0.4vw;
 }
 .shaky-text-auto {
     display: inline-block;
@@ -190,7 +193,7 @@ p {
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-top: -40px;
+    margin-top: -1.8vw;
 }
 .rotate-text {
     transition: transform 0.3s ease;
@@ -206,11 +209,11 @@ p {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: 8px;
+    margin-top: 1vw;
 }
 .line10 {
     position: relative;
-    margin-top: -20px;
+    margin-top: -0.5vw;
 }
 .line10 h3 {
     display: inline-block;
@@ -220,7 +223,7 @@ p {
 .line11 {
     text-align: right;
     position: relative;
-    margin-top: -50px;
+    margin-top: -2.5vw;
 }
 .line11 h2 {
     transition: transform 0.5s ease; /* Добавляем плавный переход для трансформации */
@@ -234,7 +237,7 @@ p {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: -40px;
+    margin-top: -1.8vw;
 }
 .line13 {
     display: flex;
@@ -242,7 +245,7 @@ p {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: -34px;
+    margin-top: -1vw;
 }
 img {
     width: 100%;
@@ -285,16 +288,16 @@ img {
 .pict_line1_left {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.4vw;;
 }
 .pict_line1_right {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.4vw;;
 }
 .pict_line1 {
-    margin-top: -32px;
-    margin-bottom: 32px;
+    margin-top: -1vw;;
+    margin-top: 1vw;;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -317,22 +320,22 @@ img {
 .buble_lol {
     display: none;
     background-image: url('../images/bable.svg');
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 160px;
     z-index: 1;
     position: absolute;
     background-repeat: no-repeat;
     margin-left: 200px;
-    margin-top: -44px;
+    margin-top: -315px;
+    align-items: center;
+    justify-content: center;
 }
 .buble_lol p {
     text-align: center;
-    width: 260px;
-    
-    margin: 42px 0 0 58px;
+    width: 275px;
 }
 .pict_line1_left .lol:hover ~ .buble_lol {
-    display: block;
+    display: flex;
 }
 .pict_line1_left .mike img:hover {
     content: url('../images/mike_hover.png');
@@ -340,22 +343,22 @@ img {
 .buble_mike {
     display: none;
     background-image: url('../images/bable2.svg');
-    width: 100%;
-    height: 100%;
+    width: 368px;
+    height: 168px;
     z-index: 1;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: 333px;
-    margin-top: 133px;
+    margin-left: 157px;
+    margin-top: -137px;
+    align-items: center;
+    justify-content: center;
 }
 .buble_mike p {
     text-align: center;
     width: 260px;
-    
-    margin: 42px 0 0 58px;
 }
 .pict_line1_left .mike:hover ~ .buble_mike {
-    display: block;
+    display: flex;
 }
 .pict_line1_left .bugurt img:hover {
     content: url('../images/bugurt_hover.png');
@@ -363,22 +366,22 @@ img {
 .buble_bugurt {
     display: none;
     background-image: url('../images/bable.svg');
-    width: 100%;
-    height: 100%;
+    width: 368px;
+    height: 168px;
     z-index: 1;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: 620px;
-    margin-top: -44px;
+    margin-left: 220px;
+    margin-top: -320px;
+    align-items: center;
+    justify-content: center;
 }
 .buble_bugurt p {
     text-align: center;
-    width: 252px;
-    
-    margin: 34px 0 0 58px;
+    width: 266px;
 }
 .pict_line1_left .bugurt:hover ~ .buble_bugurt {
-    display: block;
+    display: flex;
 }
 .pict_line1_right .nichosi img:hover {
     content: url('../images/nichosi_hover.png');
@@ -388,25 +391,26 @@ img {
 .buble_nichosi  {
     display: none;
     background-image: url('../images/bable4.svg');
-    width: 100%;
-    height: 100%;
+    width: 368px;
+    height: 168px;
     z-index: 2;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: -280px;
-    margin-top: 130px;
+    margin-left: -300px;
+    margin-top: -110px;
+    align-items: center;
+    justify-content: center;
 }
 .buble_nichosi  p {
     text-align: center;
-    width: 244px;
-    margin: 34px 0 0 58px;
+    width: 316px;
 }
 .pict_line1_right .nichosi:hover ~ .buble_nichosi  {
-    display: block;
+    display: flex;
 }
 .line14 {
     position: relative;
-    margin-top: -46px;
+    margin-top: -1vw;
 }
 .line15 {
     display: flex;
@@ -414,18 +418,18 @@ img {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: -40px;
+    margin-top: -1.8vw;
 }
 .line16 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    margin-top: -50px;
+    margin-top: -3vw;
 }
 .line17 {
     position: relative;
-    margin-top: -46px;
+    margin-top: -2vw;
 }
 .line17 h3 {
     display: inline-block;
@@ -445,7 +449,7 @@ img {
     flex-direction: row;
     justify-content: end;
     position: relative;
-    margin-top: -28px;
+    margin-top: -1vw;
 }
 .line19 {
     display: flex;
@@ -463,7 +467,7 @@ img {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: -12px;
+    margin-top: -0.2vw;
 }
 .line21 {
     display: flex;
@@ -471,7 +475,7 @@ img {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: -40px;
+    margin-top: -1.8vw;
 }
 .line21 h1, .line21 h3 {
     text-align: center;
@@ -489,16 +493,16 @@ img {
 .pict_line2_left {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.4vw;;
 }
 .pict_line2_right {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.4vw;;
 }
 .pict_line2 {
-    margin-top: -32px;
-    margin-bottom: 24px;
+    margin-top: -2vw;
+    margin-bottom: 1vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -521,21 +525,22 @@ img {
 .buble_artem {
     display: none;
     background-image: url('../images/bable2.svg');
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 160px;
     z-index: 1;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: 168px;
-    margin-top: 148px;
+    margin-left: 12vw;
+    margin-top: 170px;
+    align-items: center;
+    justify-content: center;
 }
 .buble_artem p {
     text-align: center;
     width: 286px;
-    margin: 48px 0 0 44px;
 }
 .pict_line2_left .artem:hover ~ .buble_artem {
-    display: block;
+    display: flex;
 }
 .pict_line2_left .thisis img:hover {
     content: url('../images/thisis_hover.png');
@@ -543,22 +548,22 @@ img {
 .buble_thisis {
     display: none;
     background-image: url('../images/bable.svg');
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 160px;
     z-index: 1;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: 500px;
-    margin-top: -40px;
+    margin-left: 26vw;
+    margin-top: -2.8vw;
+    align-items: center;
+    justify-content: center;
 }
 .buble_thisis p {
     text-align: center;
     width: 260px;
-    
-    margin: 42px 0 0 58px;
 }
 .pict_line2_left .thisis:hover ~ .buble_thisis {
-    display: block;
+    display: flex;
 }
 .pict_line2_right .yzbagoisya img:hover {
     content: url('../images/yzbagoisya_hover.png');
@@ -566,21 +571,22 @@ img {
 .buble_yzbagoisya {
     display: none;
     background-image: url('../images/bable4.svg');
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 160px;
     z-index: 1;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: -280px;
-    margin-top: 160px;
+    margin-left: -16vw;
+    margin-top: 9vw;
+    align-items: center;
+    justify-content: center;
 }
 .buble_yzbagoisya p {
     text-align: center;
     width: 252px;
-    margin: 34px 0 0 58px;
 }
 .pict_line2_right .yzbagoisya:hover ~ .buble_yzbagoisya {
-    display: block;
+    display: flex;
 }
 .pict_line2_right .troll img:hover {
     content: url('../images/troll_hover.png');
@@ -590,39 +596,40 @@ img {
 .buble_troll  {
     display: none;
     background-image: url('../images/bable3.svg');
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 160px;
     z-index: 1;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: -159px;
-    margin-top: -78px;
+    margin-left: -4vw;
+    margin-top: -74px;
+    align-items: center;
+    justify-content: center;
 }
 .buble_troll  p {
     text-align: center;
     width: 252px;
-    margin: 34px 0 0 58px;
 }
 .pict_line2_right .troll:hover ~ .buble_troll  {
-    display: block;
+    display: flex;
 }
 .line22 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    margin-top: -40px;
+    margin-top: -1.8vw;
 }
 .line23 {
     display: flex;
     flex-direction: row;
     justify-content: end;
     position: relative;
-    margin-top: -20px;
+    margin-top: -0.5vw;
 }
 .line24 {
     position: relative;
-    margin-top: -50px;
+    margin-top: -3vw;
 }
 .line24 h2::after {
     content: "L"; /* Пустой контент */
@@ -638,7 +645,7 @@ img {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: -36px;
+    margin-top: -2vw;
 }
 .line26 {
     display: flex;
@@ -646,7 +653,7 @@ img {
     justify-content: end;
     gap: 40px;
     position: relative;
-    margin-top: -20px;
+    margin-top: -0.5vw;
 }
 .line27 {
     display: flex;
@@ -654,26 +661,25 @@ img {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: 8px;
+    margin-top: 0.2vw;
 }
 .line28 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    margin-top: -28px;
+    margin-top: -1vw;
 }
 .line29 {
     width: 100%;
     position: relative;
-    margin-top: -40px;
-    
+    margin-top: -1.8vw;
 }
 
 .line30 {
     text-align: right;
     position: relative;
-    margin-top: -40px;
+    margin-top: -1.8vw;
 }
 .line31 {
     display: flex;
@@ -681,17 +687,18 @@ img {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: -12px;
+    margin-top: -0.2vw;
 }
 .pict_line3_left {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.4vw;;
+    margin-left: -200px;
 }
 .pict_line3_right {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.4vw;;
 }
 .pict_line3 {
     display: flex;
@@ -718,21 +725,22 @@ img {
 .buble_nyancat {
     display: none;
     background-image: url('../images/bable.svg');
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 160px;
     z-index: 2;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: 630px;
-    margin-top: -24px;
+    margin-left: 34vw;
+    margin-top: -0.6vw;
+    align-items: center;
+    justify-content: center;
 }
 .buble_nyancat p {
     text-align: center;
     width: 286px;
-    margin: 48px 0 0 44px;
 }
 .pict_line3_left .nyancat:hover ~ .buble_nyancat {
-    display: block;
+    display: flex;
 }
 .pict_line3_right .zhdun img:hover {
     content: url('../images/zhdun_hover.png');
@@ -740,21 +748,22 @@ img {
 .buble_zhdun {
     display: none;
     background-image: url('../images/bable4.svg');
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 160px;
     z-index: 1;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: -324px;
+    margin-left: -16vw;
     margin-top: 150px;
+    align-items: center;
+    justify-content: center;
 }
 .buble_zhdun p {
     text-align: center;
     width: 260px;
-    margin: 42px 0 0 58px;
 }
 .pict_line3_right .zhdun:hover ~ .buble_zhdun {
-    display: block;
+    display: flex;
 }
 .pict_line3_right .pepe img:hover {
     content: url('../images/pepe_hover.png');
@@ -764,21 +773,22 @@ img {
 .buble_pepe {
     display: none;
     background-image: url('../images/bable3.svg');
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 160px;
     z-index: 1;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: -164px;
+    margin-left: -5vw;
     margin-top: -50px;
+    align-items: center;
+    justify-content: center;
 }
 .buble_pepe p {
     text-align: center;
     width: 252px;
-    margin: 34px 0 0 58px;
 }
 .pict_line3_right .pepe:hover ~ .buble_pepe {
-    display: block;
+    display: flex;
 }
 .pict_line3_right .smalldog img:hover {
     content: url('../images/smalldog_hover.png');
@@ -788,32 +798,33 @@ img {
 .buble_smalldog  {
     display: none;
     background-image: url('../images/bable4.svg');
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 160px;
     z-index: 2;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: 150px;
+    margin-left: 9.5vw;
     margin-top: 169px;
+    align-items: center;
+    justify-content: center;
 }
 .buble_smalldog  p {
     text-align: center;
     width: 235px;
-    margin: 44px 0 0 66px;
 }
 .pict_line3_right .smalldog:hover ~ .buble_smalldog  {
-    display: block;
+    display: flex;
 }
 .line32 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    margin-top: -44px;
+    margin-top: -2vw;
 }
 .line33 {
     position: relative;
-    margin-top: -40px;
+    margin-top: -1.8vw;
 }
 .line34 {
     display: flex;
@@ -821,7 +832,7 @@ img {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: -30px;
+    margin-top: -2vw;
 }
 .line35 {
     display: flex;
@@ -829,13 +840,13 @@ img {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: -12px;
+    margin-top: -0.2vw;
 }
 .line36 {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    margin-top: -46px;
+    margin-top: -2vw;
 }
 .line37 {
     display: flex;
@@ -843,7 +854,7 @@ img {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: -40px;
+    margin-top: -1.8vw;
 }
 .line37 h5 {
     animation: rotateanimation 2s ease-in-out infinite; /* вращение h1 */
@@ -853,13 +864,13 @@ img {
     flex-direction: row;
     justify-content: end;
     position: relative;
-    margin-top: -16px;
+    margin-top: -0.8vw;
 }
 .line39 {
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-top: -40px;
+    margin-top: -1.8vw;
 }
 .line40 {
     overflow: hidden;
@@ -868,7 +879,7 @@ img {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
-    margin-top: 8px;
+    margin-top: 0.2vw;
 }
 .footer {
     background-color: #000;
@@ -896,4 +907,63 @@ img {
 }
 .right > h6 {
     color: white;
+}
+@media screen and (max-width:1024px) {
+    .pict_line1 {
+        flex-direction: column;
+    }
+    .pict_line1_left {
+        justify-content: center;
+        gap: 4vw;
+    }
+    .pict_line1_right {
+        justify-content: center;
+    }
+    .pict_line2 {
+        flex-direction: column;
+    }
+    .pict_line2_left {
+        justify-content: center;
+    }
+    .pict_line2_right {
+        justify-content: center;
+    }
+    .pict_line3 {
+        flex-direction: column;
+    }
+    .pict_line3_left {
+        justify-content: center;
+    }
+    .pict_line3_right {
+        justify-content: center;
+    }
+}
+@media screen and (max-width:414px) {
+    .pict_line1 {
+        flex-direction: column;
+    }
+    .pict_line1_left {
+        flex-direction: column;
+    }
+    .pict_line1_right {
+        flex-direction: column;
+    }
+    .pict_line2 {
+        flex-direction: column;
+    }
+    .pict_line2_left {
+        flex-direction: column;
+    }
+    .pict_line2_right {
+        flex-direction: column;
+    }
+    .pict_line3 {
+        flex-direction: column;
+    }
+    .pict_line3_left {
+        flex-direction: column;
+    }
+    .pict_line3_right {
+        flex-direction: column;
+    }
 }
