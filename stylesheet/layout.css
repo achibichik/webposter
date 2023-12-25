@@ -1,6 +1,9 @@
 body {
     margin: 0 auto;
     cursor: url('https://i.imgur.com/s5dlYp6.png'), default;
+    animation: shake-up 0.2s ease-in-out;
+    animation-iteration-count: 18;
+    overflow-x: hidden;
 }
 h1 {
     font-family: 'Arial', sans-serif;
@@ -35,7 +38,7 @@ h6 {
 }
 p {
     font-family: 'Arial', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: #000;
 }
 .wraper {
@@ -80,6 +83,9 @@ p {
     padding: 0 40px;
     position: relative;
     margin-top: -2vw;
+}
+.line3 h6 {
+    animation: scaleXAnimation 2s linear infinite alternate;
 }
 .line4 {
     display: flex;
@@ -408,6 +414,9 @@ img {
     position: relative;
     margin-top: -1vw;
 }
+.line14 h6 {
+    animation: bounce 1s linear infinite;
+}
 .line15 {
     display: flex;
     flex-direction: row;
@@ -416,12 +425,15 @@ img {
     position: relative;
     margin-top: -1.8vw;
 }
+.line15 h3:hover {
+    transform: translate(50px, 50px);
+}
 .line16 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    margin-top: -3vw;
+    margin-top: -2.5vw;
 }
 .line17 {
     position: relative;
@@ -434,7 +446,7 @@ img {
 }
 @keyframes scaleXAnimation {
     0%, 100% {
-      transform: scaleX(1); /* Начальное и конечное положение, без изменения размера */
+      transform: scaleX(1); /* Начальное и конечное положение */
     }
     50% {
       transform: scaleX(2);
@@ -447,6 +459,17 @@ img {
     position: relative;
     margin-top: -1vw;
 }
+.line18 h4:hover {
+    animation: scaleYAnimation 2s ease-in-out infinite alternate;
+}
+@keyframes scaleYAnimation {
+    0%, 100% {
+      transform: scaleY(1) scaleX(1); /* Начальное и конечное положение */
+    }
+    50% {
+      transform: scaleY(3) scaleX(3);
+    }
+}
 .line19 {
     display: flex;
     flex-direction: row;
@@ -455,7 +478,7 @@ img {
     position: relative;
 }
 .line19 h5 {
-    animation: rotateanimation 2s ease-in-out infinite; /* вращение h1 */
+    animation: rotateanimation 2s ease-in-out infinite;
 }
 .line20 {
     display: flex;
@@ -625,7 +648,7 @@ img {
 }
 .line24 {
     position: relative;
-    margin-top: -3vw;
+    margin-top: -2.5vw;
 }
 .line24 h2::after {
     content: "L"; 
@@ -643,6 +666,9 @@ img {
     position: relative;
     margin-top: -2vw;
 }
+.line25 h6:hover {
+    transform: rotate(40deg);
+}
 .line26 {
     display: flex;
     flex-direction: row;
@@ -650,6 +676,9 @@ img {
     gap: 40px;
     position: relative;
     margin-top: -0.5vw;
+}
+.line26 h1 {
+    animation: rotateanimation 2s ease-in-out infinite;
 }
 .line27 {
     display: flex;
@@ -659,6 +688,9 @@ img {
     position: relative;
     margin-top: 0.2vw;
 }
+.line27 h6 {
+    animation: scaleXAnimation 2s linear infinite alternate;
+}
 .line28 {
     display: flex;
     flex-direction: row;
@@ -666,12 +698,25 @@ img {
     position: relative;
     margin-top: -1vw;
 }
+.line28 h3:hover {
+    transform: translate(0, -50px);
+}
 .line29 {
     width: 100%;
     position: relative;
     margin-top: -1.8vw;
 }
-
+.line29 h1 {
+    animation: bounce 2s linear infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(100% - 64%));
+    }
+}
 .line30 {
     text-align: right;
     position: relative;
@@ -830,6 +875,9 @@ img {
     position: relative;
     margin-top: -2vw;
 }
+.line34 h6 {
+    animation: scaleXAnimation 2s linear infinite alternate;
+}
 .line35 {
     display: flex;
     flex-direction: row;
@@ -934,32 +982,8 @@ img {
         justify-content: center;
     }
 }
-@media screen and (max-width:414px) {
-    .pict_line1 {
-        flex-direction: column;
-    }
-    .pict_line1_left {
-        flex-direction: column;
-    }
-    .pict_line1_right {
-        flex-direction: column;
-    }
-    .pict_line2 {
-        flex-direction: column;
-    }
-    .pict_line2_left {
-        flex-direction: column;
-    }
-    .pict_line2_right {
-        flex-direction: column;
-    }
-    .pict_line3 {
-        flex-direction: column;
-    }
-    .pict_line3_left {
-        flex-direction: column;
-    }
-    .pict_line3_right {
+@media screen and (max-device-width:414px) {
+    .pict_line1, .pict_line1_left, .pict_line1_right, .pict_line2, .pict_line2_left,  .pict_line2_right, .pict_line3, .pict_line3_left,  .pict_line3_right {
         flex-direction: column;
     }
 }
