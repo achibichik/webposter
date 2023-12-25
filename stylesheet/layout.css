@@ -5,6 +5,9 @@ body {
     animation-iteration-count: 18;
     overflow-x: hidden;
 }
+.content {
+    overflow-x: hidden;
+}
 h1 {
     font-family: 'Arial', sans-serif;
     font-weight: bold;
@@ -38,11 +41,8 @@ h6 {
 }
 p {
     font-family: 'Arial', sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     color: #000;
-}
-.wraper {
-    position: relative;
 }
 .line1 {
     display: flex;
@@ -175,6 +175,25 @@ p {
     position: relative;
     margin-top: -0.4vw;
 }
+.overlay_image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25vw;
+    height: auto;
+    display: none;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+.overlay_image img {
+    width: 100%;
+    height: auto;
+}
+.hover_text:hover + .overlay_image, .overlay_image:hover {
+    display: block;
+    animation: scaleAnimation 2s ease-in-out alternate-reverse infinite;
+}
+
 .shaky-text-auto {
     display: inline-block;
     cursor: pointer;
@@ -405,7 +424,7 @@ img {
 }
 .buble_nichosi  p {
     text-align: center;
-    width: 316px;
+    width: 245px;
 }
 .pict_line1_right .nichosi:hover ~ .buble_nichosi  {
     display: flex;
@@ -952,38 +971,188 @@ img {
 .right > h6 {
     color: white;
 }
+@media screen and (max-width:1440px) {
+    p {
+        font-size: 1.5vw;
+    }
+}
 @media screen and (max-width:1024px) {
-    .pict_line1 {
+    .pict_line1, .pict_line2, .pict_line3 {
         flex-direction: column;
     }
     .pict_line1_left {
         justify-content: center;
         gap: 4vw;
     }
-    .pict_line1_right {
+    .pict_line1_right, .pict_line2_left, .pict_line2_right, .pict_line3_left, .pict_line3_right {
         justify-content: center;
     }
-    .pict_line2 {
-        flex-direction: column;
+    h1, h2 {
+        font-size: 12vw;
     }
-    .pict_line2_left {
-        justify-content: center;
+    h3, h4 {
+        font-size: 6vw;
     }
-    .pict_line2_right {
-        justify-content: center;
+    h5, h6 {
+        font-size: 4vw;
     }
-    .pict_line3 {
-        flex-direction: column;
+    p {
+        font-size: 2vw;
     }
-    .pict_line3_left {
-        justify-content: center;
+    .buble_lol, .buble_mike, .buble_bugurt, .buble_nichosi, .buble_artem, .buble_nyancat, .buble_pepe, .buble_smalldog, .buble_thisis, .buble_troll, .buble_yzbagoisya, .buble_zhdun {
+        visibility: hidden
     }
-    .pict_line3_right {
-        justify-content: center;
+    .pict_line1_left .lol img {
+        content: url('../images/lol_hover.png');
+        position: relative;
+        z-index: 2;
+    }
+    .pict_line1_left .lol img:hover {
+        content: none;
+        position: inherit;
+        z-index: inherit;
+    }
+    .pict_line1_left .mike img {
+        content: url('../images/mike_hover.png');
+        position: relative;
+        z-index: 2;
+    }
+    .pict_line1_left .mike img:hover {
+        content: none;
+        position: inherit;
+        z-index: inherit;
+    }
+    .pict_line1_left .bugurt img {
+        content: url('../images/bugurt_hover.png');
+        position: relative;
+        z-index: 2;
+    }
+    .pict_line1_left .bugurt img:hover {
+        content: none;
+        position: inherit;
+        z-index: inherit;
+    }
+    .pict_line1_right .nichosi img {
+        content: url('../images/nichosi_hover.png');
+        position: relative;
+        z-index: 2;
+    }
+    .pict_line1_right .nichosi img:hover {
+        content: none;
+        position: inherit;
+        z-index: inherit;
+    }
+    .pict_line2_left .artem img {
+        content: url('../images/artem_hover.png');
+        position: relative;
+        z-index: 2;
+    }
+    .pict_line2_left .artem img:hover {
+        content: none;
+        position: inherit;
+        z-index: inherit;
+    }
+    .pict_line2_left .thisis img {
+        content: url('../images/thisis_hover.png');
+        position: relative;
+        z-index: 2;
+    }
+    .pict_line2_left .thisis img:hover {
+        content: none;
+        position: inherit;
+        z-index: inherit;
+    }
+    .pict_line2_right .yzbagoisya img {
+        content: url('../images/yzbagoisya_hover.png');
+        position: relative;
+        z-index: 2;
+    }
+    .pict_line2_right .yzbagoisya img:hover {
+        content: none;
+        position: inherit;
+        z-index: inherit;
+    }
+    .pict_line2_right .troll img {
+        content: url('../images/troll_hover.png');
+        position: relative;
+        z-index: 2;
+    }
+    .pict_line2_right .troll img:hover {
+        content: none;
+        position: inherit;
+        z-index: inherit;
+    }
+    .pict_line3_left .nyancat img {
+        content: url('../images/nyancat_hover.png');
+        position: relative;
+        z-index: 2;
+    }
+    .pict_line3_left .nyancat img:hover {
+        content: none;
+        position: inherit;
+        z-index: inherit;
+    }
+    .pict_line3_right .zhdun img {
+        content: url('../images/zhdun_hover.png');
+        position: relative;
+        z-index: 2;
+    }
+    .pict_line3_right .zhdun img:hover {
+        content: none;
+        position: inherit;
+        z-index: inherit;
+    }
+    .pict_line3_right .pepe img {
+        content: url('../images/pepe_hover.png');
+        position: relative;
+        z-index: 2;
+    }
+    .pict_line3_right .pepe img:hover {
+        content: none;
+        position: inherit;
+        z-index: inherit;
+    }
+    .pict_line3_right .smalldog img {
+        content: url('../images/smalldog_hover.png');
+        position: relative;
+        z-index: 2;
+    }
+    .pict_line3_right .smalldog img:hover {
+        content: none;
+        position: inherit;
+        z-index: inherit;
     }
 }
 @media screen and (max-device-width:414px) {
     .pict_line1, .pict_line1_left, .pict_line1_right, .pict_line2, .pict_line2_left,  .pict_line2_right, .pict_line3, .pict_line3_left,  .pict_line3_right {
         flex-direction: column;
+    }
+    .pict_line1, .pict_line2, .pict_line3 {
+        text-align: center;
+    }
+    h1, h2 {
+        font-size: 20vw;
+    }
+    h3, h4 {
+        font-size: 14vw;
+    }
+    h5, h6 {
+        font-size: 10vw;
+    }
+    .buble_lol, .buble_mike, .buble_bugurt, .buble_nichosi, .buble_artem, .buble_nyancat, .buble_pepe, .buble_smalldog, .buble_thisis, .buble_troll, .buble_yzbagoisya, .buble_zhdun {
+        visibility: hidden
+    }
+    .footer {
+        flex-direction: column;
+        gap: 120px;
+    }
+    .left {
+        line-height: 80px;
+    }
+    .right {
+        line-height: 80px;
+    }
+    img {
+        max-width: 80%; 
     }
 }
